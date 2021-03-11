@@ -1,0 +1,14 @@
+<div id = "navbar" class = "nav">
+
+    <div id = "nav-bg" class = "navbg"></div>
+    <div class = "navoverlay"></div>
+    <div id = "navInfo" class = "navinfo">
+      <a href = "/" class="titlelink">Sunbear<a>
+      <p style="padding-bottom: 25px; margin-top: 0px;">By Kaley Maier</p>
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" class = "navlink">
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
